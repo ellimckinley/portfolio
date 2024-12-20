@@ -17,7 +17,7 @@
 * {
     /* border: 2px dashed black; */
     margin: 5px;
-    padding: 10px 20px 10px;
+    padding: 15px 20px 10px;
     /* background-color: var(--light); */
     font-size: 16px;
 }
@@ -30,6 +30,11 @@ header, h1 {
     font-size: 45px;
 }
 
+/*header {
+    margin: 5px;
+    padding: 10px 20px 25px;
+
+} */
 h2 {
     font-size: 24px;
 }
@@ -91,27 +96,33 @@ input[type=text], select, textarea {
   }
 /* form {
         background-color: var(--form-background-blue);
-        padding: 20px; */
-} 
+        padding: 20px;
+ }  */
 
 .hero {
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("mckinleywedding-0864.jpg"); 
+    margin: 25px -90px 25px;
+    padding:687px 59px 52px 321px;
+    background-image: url("../portfolio/images/McKinleyWedding-0864.jpg"); 
     background-size: cover;
     background-position: center;
 }
 .projects-container {
     display: flex;
+    flex: 1 0 0;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 .project-item {
+    flex: 1;
     border: 2px solid var(--border-color);
+    align-content: space-evenly;
     border-radius: var(--button-border-radius);
+    min-width: 567px;
+    max-width: 1000px;
     
 }
 
@@ -124,3 +135,15 @@ input[type=text], select, textarea {
     padding: 100px;
   }
   
+#about-me {
+    
+}
+  #contact-me {
+
+  }
+
+  #work {
+
+  }
+
+

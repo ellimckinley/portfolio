@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
 </head>
-<body>
+
     <header>
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">Work</a>
-            <a href="#">Contact Me</a>
-            <a href="#">LinkedIn</a>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="https://www.linkedin.com/in/ellimckinley">LinkedIn</a>
         </nav>
         <h3>Portfolio</h3>
         <h1>Elli McKinley is a coding student in Western Colorado.</h1>
 
-    </header> 
+    
 
     <div class="hero">
         <h2>Please hire me.</h2>
     </div>
-    <section>
+</header> 
+<body>
+    <section id="about-me">
         <h2>About Me</h2>
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Viverra praesent dapibus morbi fusce per. Aptent duis euismod lobortis ultricies, suspendisse massa natoque euismod. Cubilia iaculis cubilia ipsum bibendum potenti integer pulvinar. Fusce purus cursus a sollicitudin praesent facilisi. Laoreet magna neque et sapien, convallis nibh potenti. Ultricies nibh dis urna morbi erat potenti. Vulputate iaculis porttitor suspendisse mus pellentesque elementum lectus finibus.</p>
         <p>Maecenas suspendisse vivamus efficitur ad penatibus ornare. Sodales venenatis platea ligula felis nec maximus. Luctus cursus nullam pretium conubia; sagittis sagittis. Sollicitudin molestie per inceptos nisl est sociosqu augue vestibulum aliquet. Sociosqu arcu litora praesent sapien semper. Sollicitudin ante quam velit sem; imperdiet at integer volutpat. Netus nisi cubilia cras cursus id.</p>
     </section>
-    <section>
+    <section id="work">
         <h2>Work</h2>
         <container class="projects-container">
             <div class="project-item">
@@ -51,21 +53,24 @@
         
     </section>
     
-    <div class="contact-form">
+    <div class="contact-form" id="contact-me">
             <h2>Get in Touch.</h2>
             <div>
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter"><br>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="..."><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="...""><br>
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email"placeholder="Enter"><br>
+            <input type="text" id="email" name="email"placeholder="..."><br>
+            <label for="sagittis">Subject</label><br>
+            <input type="text" id="subject" name="subject"placeholder="..."><br>
             <label for="message">What would you like to say?</label><br>
-            <input type="text" id="message" name="message"placeholder="Enter" maxlength="1000">><br>
+            <input type="text" id="message" name="message"placeholder="..." maxlength="1000">><br>
             <input type="submit" value="Submit">
             </div>
 
     </div>
     <section >
-        <h3>Footer Section</h3>
         <div>
             <p>Made with love by Elli</p>
         </div>
