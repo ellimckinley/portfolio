@@ -7,7 +7,7 @@
     --border-color: black;
     --highlight-color: #dbdbdb;
     --button-padding: 12px 20px;
-    --button-border-radius: 4px;
+    --button-border-radius: 0px;
     --button-cursor: pointer;
     --button-text-color: white;
     --button-color: rgba(253, 156, 134, 0.959);   
@@ -64,7 +64,14 @@ nav a{
 footer {
     text-align: center;
 }
-
+.button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: var(--button-cursor)
+  }
 input[type=text], select, textarea {
     width: 60%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -76,12 +83,13 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
-  input[id=message] {
+input[id=message] {
     height: 100px !important;   
 }
 
+
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=submit] {
     background-color: var(--button-color);
     color: var(--button-text-color);
     padding: var(--button-padding);
@@ -91,7 +99,7 @@ input[type=text], select, textarea {
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+input[type=submit, button]:hover {
     background-color: var(--highlight-color);
   }
 /* form {
@@ -136,7 +144,7 @@ input[type=text], select, textarea {
   }
   
 #about-me {
-    
+
 }
   #contact-me {
 
