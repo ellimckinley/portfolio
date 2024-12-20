@@ -1,0 +1,126 @@
+:root{
+    --form-background-blue: rgb(21, 14, 153);
+    --background-white: white;
+    --orange: rgb(203, 99, 65);
+    --light: white;
+    --body-text: black;
+    --border-color: black;
+    --highlight-color: #dbdbdb;
+    --button-padding: 12px 20px;
+    --button-border-radius: 4px;
+    --button-cursor: pointer;
+    --button-text-color: white;
+    --button-color: rgba(253, 156, 134, 0.959);   
+    --link-orange: rgba(253, 156, 132, 0.959;)
+
+}
+* {
+    /* border: 2px dashed black; */
+    margin: 5px;
+    padding: 10px 20px 10px;
+    /* background-color: var(--light); */
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+header, h1 {
+    color: var(--body-text);
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;   
+}
+header p {
+    color: var(--body-text);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav a{
+    color: var(--body-text);
+    padding: var(--button-padding);
+    text-decoration: underline;
+    text-align: center;
+    border: none;
+    cursor: var(--button-cursor);
+}
+
+footer {
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 60%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[id=message] {
+    height: 100px !important;   
+}
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: var(--button-cursor)
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(--highlight-color);
+  }
+/* form {
+        background-color: var(--form-background-blue);
+        padding: 20px; */
+} 
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("mckinleywedding-0864.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project-item {
+    border: 2px solid var(--border-color);
+    border-radius: var(--button-border-radius);
+    
+}
+
+.contact-form {
+    color: var(--light);
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--form-background-blue);
+    margin: 0 -100px 6px;
+    padding: 100px;
+  }
+  
