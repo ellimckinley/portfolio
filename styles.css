@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: Verdana, sans-serif;
 }
 header, h1 {
     color: var(--body-text);
@@ -55,10 +55,14 @@ nav {
 nav a{
     color: var(--body-text);
     padding: var(--button-padding);
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     border: none;
     cursor: var(--button-cursor);
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 footer {
@@ -72,6 +76,11 @@ footer {
     border-radius: var(--button-border-radius);
     cursor: var(--button-cursor)
   }
+
+.button:hover {
+    background-color: var(--highlight-color);
+  }
+
 input[type=text], select, textarea {
     width: 60%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -87,7 +96,6 @@ input[id=message] {
     height: 100px !important;   
 }
 
-
   /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: var(--button-color);
@@ -98,10 +106,11 @@ input[type=submit] {
     cursor: var(--button-cursor)
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit, button]:hover {
+  /* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
     background-color: var(--highlight-color);
   }
+
 /* form {
         background-color: var(--form-background-blue);
         padding: 20px;
@@ -124,13 +133,60 @@ input[type=submit, button]:hover {
     align-items: center;
 }
 
-.project-item {
-    flex: 1;
+.project-item-first-child {
     border: 2px solid var(--border-color);
-    align-content: space-evenly;
     border-radius: var(--button-border-radius);
+    min-height: 400px;
+    flex-basis: 100%;
+    align-items: flex-end;
+    margin: 20px;
+    padding: 0 0 20px 0;
+    transition: all 0.5s;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    background-image: url(./images/flowers.jpeg);
+}
+.project-item:hover{
+    background-color: var(--highlight-color);
+}
+
+.project-item-first-child:hover{
+    background-color: var(--highlight-color);
+}
+
+#rock{
+    background-image:url(./images/rock.jpeg);
+}
+#mountain{
+    background-image:url(./images/mountain.jpeg);
+}
+#sky{
+    background-image: url(./images/sky.jpeg) ;
+}
+#water{
+    background-image: url(./images/water.jpeg) ;
+}
+.project-item {
+    flex: 1 0 0;
     min-width: 567px;
     max-width: 1000px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--button-border-radius);
+    align-content: space-evenly;
+    color: var(--body-text);
+    min-height: 250px;
+    max-height: 250px;
+    /* flex-basis: calc(50% - 1em); */
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 20px;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+
     
 }
 
@@ -140,7 +196,7 @@ input[type=submit, button]:hover {
     flex-wrap: wrap;
     background-color: var(--form-background-blue);
     margin: 0 -100px 6px;
-    padding: 100px;
+    padding: 164px;
   }
   
 #about-me {
@@ -154,4 +210,15 @@ input[type=submit, button]:hover {
 
   }
 
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    header{
+        width:75%;
+}
 
