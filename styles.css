@@ -125,6 +125,29 @@ input[type=submit]:hover {
     background-size: cover;
     background-position: center;
 }
+.about-me {
+    display: inline-block;
+    }
+#contact-me {
+    
+}
+    
+#work {
+    
+}
+
+.about-me-img {
+    height: 50px;
+    width: 50px;
+
+    vertical-align: middle;
+}
+
+.about-me-text {
+    margin-left: 330px;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
 .projects-container {
     display: flex;
     flex: 1 0 0;
@@ -199,16 +222,7 @@ input[type=submit]:hover {
     padding: 164px;
   }
   
-#about-me {
 
-}
-  #contact-me {
-
-  }
-
-  #work {
-
-  }
 
 @media screen and (max-width: 980px) {
     header {
