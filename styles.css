@@ -1,3 +1,4 @@
+
 :root{
     --form-background-blue: rgb(21, 14, 153);
     --background-white: white;
@@ -14,8 +15,9 @@
     --link-orange: rgba(253, 156, 132, 0.959;)
 
 }
+
 * {
-    /* border: 2px dashed black; */
+    border: 2px dashed black;
     margin: 5px;
     padding: 15px 20px 10px;
     /* background-color: var(--light); */
@@ -126,7 +128,8 @@ input[type=submit]:hover {
     background-position: center;
 }
 .about-me {
-    display: inline-block;
+    display: flex;
+    align-items: flex-end;
     }
 #contact-me {
     
@@ -137,16 +140,17 @@ input[type=submit]:hover {
 }
 
 .about-me-img {
-    height: 50px;
-    width: 50px;
-
+    /* height: 50px;
+    width: 50px; */
     vertical-align: middle;
+    display: flex;
+    align-items: flex-end;
 }
 
 .about-me-text {
-    margin-left: 330px;
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
+    /* margin-left: 330px;
+    padding: 10px 10px 10px 10px; */
+    
 }
 .projects-container {
     display: flex;
@@ -180,15 +184,19 @@ input[type=submit]:hover {
 
 #rock{
     background-image:url(./images/rock.jpeg);
+    background-blend-mode: soft-light;
 }
 #mountain{
     background-image:url(./images/mountain.jpeg);
+    background-blend-mode: soft-light;
 }
 #sky{
     background-image: url(./images/sky.jpeg) ;
+    background-blend-mode: soft-light;
 }
 #water{
     background-image: url(./images/water.jpeg) ;
+    background-blend-mode: soft-light;
 }
 .project-item {
     flex: 1 0 0;
@@ -223,16 +231,62 @@ input[type=submit]:hover {
   }
   
 
+/* @media screen and (max-width: 600px) {
+    .project-item {
+        flex-basis: 100%;
+    }
+    .project-item-first-child {
+        flex-basis: 100%;
+    }
+    .projects-container {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-img {
+        margin: 0 auto;
+    }
+    .about-me-text {
+        margin: 0 auto;
+    }
+    .hero {
+        height: 400px;
+        padding: 0;
+    }
+    .contact-form {
+        padding: 0;
+    }
+    
+} */
 
-@media screen and (max-width: 980px) {
-    header {
-        padding: 0 0 10px 0;
-        justify-content: center;
-        text-align: center;
+@media screen and (max-width: 768px) { 
+    .project-item {
+        flex-basis: 100%;
+        height: 500px;
+    }
+    .project-item-first-child {
+        flex-basis: 100%;
+        height: 500px;
+    }
+    .projects-container {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-img {
+        margin: 0 auto;
+    }
+    .about-me-text {
+        margin: 0 auto;
+    }
+    .hero {
+        height: 400px;
+        padding: 0;
+    }
+    .contact-form {
+        padding: 0;
+    }
+    
 }
-
-@media screen and (max-width:768px) {
-    header{
-        width:75%;
-}
-
