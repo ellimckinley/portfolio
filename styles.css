@@ -17,11 +17,12 @@
 }
 
 * {
-    border: 2px dashed black;
-    margin: 5px;
+    /* border: 2px dashed black;
+    margin: 5px; */
     padding: 15px 20px 10px;
     /* background-color: var(--light); */
     font-size: 16px;
+    display: flexbox;
 }
 
 body {
@@ -261,16 +262,23 @@ input[type=submit]:hover {
 } */
 
 @media screen and (max-width: 768px) { 
-    .project-item {
+    /* .project-item {
         flex-basis: 100%;
-        height: 500px;
-    }
-    .project-item-first-child {
+        height:auto 
+    }*/
+    .project-item, .project-item-first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        min-height: 250px;
         flex-basis: 100%;
-        height: 500px;
+        height:auto 
     }
     .projects-container {
+        display: flex;
         flex-direction: column;
+        padding: 0;
     }
     .about-me {
         flex-direction: column;
