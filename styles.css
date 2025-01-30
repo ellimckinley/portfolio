@@ -71,7 +71,7 @@ nav a:hover{
 footer {
     text-align: center;
 }
-.button {
+.contact-button {
     background-color: var(--button-color);
     color: var(--button-text-color);
     padding: var(--button-padding);
@@ -80,7 +80,7 @@ footer {
     cursor: var(--button-cursor)
   }
 
-.button:hover {
+.contact-button:hover {
     background-color: var(--highlight-color);
   }
 
@@ -106,7 +106,7 @@ input[type=submit] {
     padding: var(--button-padding);
     border: none;
     border-radius: var(--button-border-radius);
-    cursor: var(--button-cursor)
+    cursor: var(--button-cursor) 
   }
   
   /* When moving the mouse over the submit button, add a darker color */
@@ -119,6 +119,12 @@ input[type=submit]:hover {
         padding: 20px;
  }  */
 
+.dark-mode {
+    border: none;
+    display: flexbox;
+    background-color: none;
+    align-items: flex-end;
+}
 .hero {
     height: 800px;
     width: 100%;
@@ -162,7 +168,6 @@ input[type=submit]:hover {
 }
 
 .project-item-first-child {
-    color: var(--light);
     border: 2px solid var(--border-color);
     border-radius: var(--button-border-radius);
     min-height: 400px;

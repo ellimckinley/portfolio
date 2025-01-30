@@ -6,95 +6,113 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
+
+    <!-- Tailwind Darkmode Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Ensure dark mode uses the 'class' strategy as opposed to the default media strategy with CDN
+            theme: {
+            extend: {},
+        },
+    };
+    </script>
     <title>Code by Elli</title>
 </head>
 
-<header>
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contact-me">Contact Me</a>
-            <a href="https://www.linkedin.com/in/ellimckinley">LinkedIn</a>
-        </nav>
-        <h3>Code by Elli</h3>
-        <h1>Elli is a coding student in Western Colorado.</h1>
-
-    
-
-    <div class="hero">
-        <h2></h2>
-    </div>
-</header> 
 <body>
-    <div >
-        <h2>About Me</h2>
-        <div class="about-me" >
-            <div class="about-me-img">
-                <img src="./images/profile.jpeg" alt="image of elli" width="300" height="300">
-            </div>
-            <div class="about-me-text">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Viverra praesent dapibus morbi fusce per. Aptent duis euismod lobortis ultricies, suspendisse massa natoque euismod. Cubilia iaculis cubilia ipsum bibendum potenti integer pulvinar. Fusce purus cursus a sollicitudin praesent facilisi. Laoreet magna neque et sapien, convallis nibh potenti. Ultricies nibh dis urna morbi erat potenti. Vulputate iaculis porttitor suspendisse mus pellentesque elementum lectus finibus.</p>
-                <p>Maecenas suspendisse vivamus efficitur ad penatibus ornare. Sodales venenatis platea ligula felis nec maximus. Luctus cursus nullam pretium conubia; sagittis sagittis. Sollicitudin molestie per inceptos nisl est sociosqu augue vestibulum aliquet. Sociosqu arcu litora praesent sapien semper. Sollicitudin ante quam velit sem; imperdiet at integer volutpat. Netus nisi cubilia cras cursus id.</p>
-            </div>
+    <header>
+        <div class="dark-mode">
+            <button  id="darkModeToggle" >☀️</button>    
         </div>
-    </div>
-    <section class="work">
-        <h2>Work</h2>
-        <div class="project-item-first-child">
-            <h3><a href="https://ellimckinley.github.io/SwatchSaver/"></a>SwatchSaver</h3>              
-            <p>SwatchSaver interactive color palette generator.</p>
-            <!-- <p style="background-image: url(./images/flowers.jpeg);"></p> -->
-        </div>
-        <container class="projects-container">
+        <nav>
+                <a href="#about-me">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact-me">Contact</a>
+                <a href="https://www.linkedin.com/in/ellimckinley" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+            <h3>Code by Elli</h3>
+            <h1>Elli is a coding student in Western Colorado.</h1>
 
-            <div class="project-item" id="rock">
-                <h3>Project Two</h3>
-                <p>Primis arcu parturient conubia suspendisse adipiscing ultricies. *Module 1 Challenge* </p>
-
-            </div>
-            <div class="project-item" id="sky">
-                <h3>Project Three</h3>
-                <p>Nisi metus litora phasellus nec ultricies feugiat viverra.</p>
-                <!-- <p style="background-image: url(./images/sky.jpeg);"></p> -->
-            </div>
-            <div class="project-item" id="mountain">
-                <h3>Project Four</h3>
-                <p>Rhoncus facilisis etiam nibh taciti aliquet lobortis duis lacinia.</p>
-                <!-- <p style="background-image: url(./images/water.jpeg);"></p> -->
-            </div>
-            <div class="project-item" id="water">
-                <h3>Project Five</h3>
-                <p>Rhoncus facilisis etiam nibh taciti aliquet lobortis duis lacinia.</p>
-                <!-- <p style="background-image: url(./images/mountain.jpeg);"></p> -->
-            </div>
-        </container>
         
-    </section>
-    
-    <div class="contact-form" id="contact-me">
-            <h2>Get in Touch.</h2>
-            <div>
-                <button class="button" onclick="/Users/ellimckinley/Desktop/Developer/portfolio/contact-me.html">Contact Me</button>
-            </div>
-            <!-- <div>
-                <label for="fname">First Name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="..."><br>
-                <label for="lname">Last Name</label><br>
-                <input type="text" id="lname" name="lname" placeholder="...""><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email"placeholder="..."><br>
-                <label for="sagittis">Subject</label><br>
-                <input type="text" id="subject" name="subject"placeholder="..."><br>
-                <label for="message">What would you like to say?</label><br>
-                <input type="text" id="message" name="message"placeholder="..." maxlength="1000">><br>
-                <input type="submit" value="Submit">
-            </div> -->
 
-    </div>
-    <section >
-        <div>
-            <p>Made with love by Elli</p>
+        <div class="hero">
+            <h2></h2>
         </div>
-    </section>
+    </header> 
+    <main>
+        <div >
+            <h2>About</h2>
+            <div class="about-me" >
+                <div class="about-me-img">
+                    <img src="./images/profile.jpeg" alt="image of elli" width="300" height="300">
+                </div>
+                <div class="about-me-text">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Viverra praesent dapibus morbi fusce per. Aptent duis euismod lobortis ultricies, suspendisse massa natoque euismod. Cubilia iaculis cubilia ipsum bibendum potenti integer pulvinar. Fusce purus cursus a sollicitudin praesent facilisi. Laoreet magna neque et sapien, convallis nibh potenti. Ultricies nibh dis urna morbi erat potenti. Vulputate iaculis porttitor suspendisse mus pellentesque elementum lectus finibus.</p>
+                    <p>Maecenas suspendisse vivamus efficitur ad penatibus ornare. Sodales venenatis platea ligula felis nec maximus. Luctus cursus nullam pretium conubia; sagittis sagittis. Sollicitudin molestie per inceptos nisl est sociosqu augue vestibulum aliquet. Sociosqu arcu litora praesent sapien semper. Sollicitudin ante quam velit sem; imperdiet at integer volutpat. Netus nisi cubilia cras cursus id.</p>
+                </div>
+            </div>
+        </div>
+        <section class="work">
+            <h2>Work</h2>
+            <div class="project-item-first-child">
+                <h3><a href="https://ellimckinley.github.io/SwatchSaver/"></a>SwatchSaver</h3>              
+                <p>SwatchSaver interactive color palette generator.</p>
+                <!-- <p style="background-image: url(./images/flowers.jpeg);"></p> -->
+            </div>
+            <container class="projects-container">
+
+                <div class="project-item" id="rock">
+                    <h3>Project Two</h3>
+                    <p>Primis arcu parturient conubia suspendisse adipiscing ultricies. *Module 1 Challenge* </p>
+
+                </div>
+                <div class="project-item" id="sky">
+                    <h3>Project Three</h3>
+                    <p>Nisi metus litora phasellus nec ultricies feugiat viverra.</p>
+                    <!-- <p style="background-image: url(./images/sky.jpeg);"></p> -->
+                </div>
+                <div class="project-item" id="mountain">
+                    <h3>Project Four</h3>
+                    <p>Rhoncus facilisis etiam nibh taciti aliquet lobortis duis lacinia.</p>
+                    <!-- <p style="background-image: url(./images/water.jpeg);"></p> -->
+                </div>
+                <div class="project-item" id="water">
+                    <h3>Project Five</h3>
+                    <p>Rhoncus facilisis etiam nibh taciti aliquet lobortis duis lacinia.</p>
+                    <!-- <p style="background-image: url(./images/mountain.jpeg);"></p> -->
+                </div>
+            </container>
+            
+        </section>
+        
+        <div class="contact-form" id="contact-me">
+                <h2>Get in Touch.</h2>
+                <div>
+                    <button class="contact-button" >Contact Me</button>
+                </div>
+                <!-- <div>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="..."><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="...""><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email"placeholder="..."><br>
+                    <label for="sagittis">Subject</label><br>
+                    <input type="text" id="subject" name="subject"placeholder="..."><br>
+                    <label for="message">What would you like to say?</label><br>
+                    <input type="text" id="message" name="message"placeholder="..." maxlength="1000">><br>
+                    <input type="submit" value="Submit">
+                </div> -->
+
+        </div>
+        <section >
+            <div>
+                <p>Made by Elli</p>
+            </div>
+        </section>
+        <script src="./js/darkmode.js"></script>
+        <script src="./js/contactme.js"></script>
+    </main>
+   
 </body>
 </html>
