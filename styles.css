@@ -162,6 +162,7 @@ input[type=submit]:hover {
 }
 
 .project-item-first-child {
+    color: var(--light);
     border: 2px solid var(--border-color);
     border-radius: var(--button-border-radius);
     min-height: 400px;
@@ -173,7 +174,7 @@ input[type=submit]:hover {
     text-decoration: none;
     background-blend-mode: soft-light;
     background-size: 150%;
-    background-image: url(./images/flowers.jpeg);
+    background-image: url(./images/swatcsaver_image.png);
 }
 .project-item:hover{
     background-color: var(--highlight-color);
