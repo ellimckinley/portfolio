@@ -1,33 +1,23 @@
+// TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
+function darkMode() {
+  let element = document.body;
+  element.classList.toggle("dark");
+  const button = document.getElementById("toggle");
+  let dark = element.classList.contains("dark");
+  button.textContent = dark ? "🌚" : "🌞";
+  localStorage.setItem('darkMode', dark);
+}
 
-// logic to switch light/dark mode on generator page
-
-    // Select the button and the root element (HTML tag)
-    const toggleButton = document.getElementById('darkModeToggle');
-    const rootElement = document.documentElement;
-
-    console.log('Dark Mode Toggle Button:', toggleButton);
-
-// Check localStorage for theme preference on load
-    const savedTheme = localStorage.getItem('theme');
-    console.log('Theme on load:', savedTheme);
-
-        if (savedTheme === 'dark') {
-        rootElement.classList.add('dark');
-        console.log('Switching to light mode');
-        } else {
-        rootElement.classList.remove('dark');
-        console.log('Switching to dark mode');
-        }
+let dark = JSON.parse(localStorage.getItem('darkMode'));
+console.log(dark);
 
 
-    // Add event listener to toggle button
-    toggleButton.addEventListener('click', () => {
-      if (rootElement.classList.contains('dark')) {
-        rootElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      } else {
-        rootElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      }
-    });
-    console.log(toggleButton)
+// TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
+
+function readLocalStorage() {
+  const modeType = localStorage.getItem('darkMode')
+  if (modeType === null || modeType === undefined){
+    return [];
+  }
+  console.log(modeType)
+}

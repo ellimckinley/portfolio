@@ -8,21 +8,21 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
 
     <!-- Tailwind Darkmode Config -->
-    <script>
+    <!-- <script>
         tailwind.config = {
             darkMode: 'class', // Ensure dark mode uses the 'class' strategy as opposed to the default media strategy with CDN
             theme: {
             extend: {},
         },
     };
-    </script>
+    </script> -->
     <title>Code by Elli</title>
 </head>
 
 <body>
     <header>
-        <div class="dark-mode">
-            <button  id="darkModeToggle" >☀️</button>    
+        <div>
+            <button onclick="darkMode()" id="toggle">☀️</button> 
         </div>
         <nav>
                 <a href="#about-me">About</a>
@@ -54,17 +54,16 @@
         </div>
         <section class="work">
             <h2>Work</h2>
-            <div class="project-item-first-child">
-                <h3><a href="https://ellimckinley.github.io/SwatchSaver/"></a>SwatchSaver</h3>              
-                <p>SwatchSaver interactive color palette generator.</p>
-                <!-- <p style="background-image: url(./images/flowers.jpeg);"></p> -->
-            </div>
+            
             <container class="projects-container">
-
-                <div class="project-item" id="rock">
-                    <h3>Project Two</h3>
-                    <p>Primis arcu parturient conubia suspendisse adipiscing ultricies. *Module 1 Challenge* </p>
-
+                <div class="project-item-first-child" onclick="window.location.href='https://ellimckinley.github.io/SwatchSaver/';" style="cursor: pointer;">
+                    <h3>SwatchSaver</h3>              
+                    <p>SwatchSaver interactive color palette generator.</p>
+                <!-- <p style="background-image: url(./images/flowers.jpeg);"></p> -->
+                </div>
+                <div class="project-item" id="rock" onclick="window.location.href='https://github.com/ellimckinley/readme-generator';" style="cursor: pointer;">
+                    <h3>README Generator</h3>
+                    <p>GitHub repository with Javascript that allows users to create README via node prompts.</p>
                 </div>
                 <div class="project-item" id="sky">
                     <h3>Project Three</h3>

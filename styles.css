@@ -1,10 +1,12 @@
 
 :root{
     --form-background-blue: rgb(21, 14, 153);
-    --background-white: white;
+    --light-background-white: white;
+    --dark-background-gray: rgba(7, 7, 7, 0.69);
     --orange: rgb(203, 99, 65);
     --light: white;
-    --body-text: black;
+    --dark-body-text: white;
+    --light-body-text: black;
     --border-color: black;
     --highlight-color: #dbdbdb;
     --button-padding: 12px 20px;
@@ -29,7 +31,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 header, h1 {
-    color: var(--body-text);
+    color: var(--light-body-text);
     font-size: 45px;
 }
 
@@ -46,7 +48,7 @@ h3 {
     font-size: 18px;   
 }
 header p {
-    color: var(--body-text);
+    color: var(--light-body-text);
 }
 
 nav {
@@ -56,7 +58,7 @@ nav {
 }
 
 nav a{
-    color: var(--body-text);
+    color: var(--light-body-text);
     padding: var(--button-padding);
     text-decoration: none;
     text-align: center;
@@ -119,12 +121,21 @@ input[type=submit]:hover {
         padding: 20px;
  }  */
 
-.dark-mode {
+ #toggle {
+    font-size: 1.52em;
+    margin: 0;
+    padding: 0;
+    background: transparent;
     border: none;
-    display: flexbox;
-    background-color: none;
-    align-items: flex-end;
-}
+    cursor: pointer;
+    text-shadow: 0px 0px .5rem var(--light-accent);
+  }
+
+  .light main {
+    background-color: var(--light-accent);
+    color: var(--dark);
+  }
+
 .hero {
     height: 800px;
     width: 100%;
@@ -159,15 +170,18 @@ input[type=submit]:hover {
     padding: 10px 10px 10px 10px; */
     
 }
-.projects-container {
+/* .projects-container {
     display: flex;
     flex: 1 0 0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+    margin: 0;
+    padding: 0;
+} */
 
 .project-item-first-child {
+    font-family: Verdana, sans-serif;
     border: 2px solid var(--border-color);
     border-radius: var(--button-border-radius);
     min-height: 400px;
@@ -181,6 +195,7 @@ input[type=submit]:hover {
     background-size: 150%;
     background-image: url(./images/swatcsaver_image.png);
 }
+
 .project-item:hover{
     background-color: var(--highlight-color);
 }
@@ -212,7 +227,7 @@ input[type=submit]:hover {
     border: 2px solid var(--border-color);
     border-radius: var(--button-border-radius);
     align-content: space-evenly;
-    color: var(--body-text);
+    color: var(--light-body-text);
     min-height: 250px;
     max-height: 250px;
     /* flex-basis: calc(50% - 1em); */

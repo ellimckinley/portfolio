@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         modalContent.innerHTML = `
-            <p style="color:#ff0f0f" >THIS DOES NOT FUNCTION CURRENTLY</p>
+            <p style="color:#ff0f0f" >🛠 UNDER CONSTRUCTION</p>
             <h2>Contact Me </h2>
             <form id="contactForm">
             <div style="margin-bottom: 10px;">
